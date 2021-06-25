@@ -57,14 +57,14 @@ body {
   margin-top: 10px;
 }
 button {
-  width: 150px;
-  height: 40px;
-  color: white;
-  background: #ce812c;
-  border: 2px solid #af6727;
-  box-sizing: border-box;
-  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 2px;
+  width: 150px !important;
+  height: 40px !important;
+  color: white !important;
+  background: #ce812c !important;
+  border: 2px solid #af6727 !important;
+  box-sizing: border-box !important;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25) !important;
+  border-radius: 2px !important;
 }
 #subscribe-button {
   width: 150px;
