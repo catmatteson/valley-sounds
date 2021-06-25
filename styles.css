@@ -66,10 +66,22 @@ button {
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
 }
+#subscribe-button {
+  width: 150px;
+  height: 40px;
+  color: white;
+  background: #ce812c;
+  border: 2px solid #af6727;
+  box-sizing: border-box;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+
 .emailInput {
   width: 100%;
   height: 34px;
   margin-right: 10px;
+  padding-left: 10px;
 }
 #tixImg {
   width: 3em;
@@ -107,4 +119,13 @@ button {
   #tixImg {
     display: none;
   }
+}
+/* #mc_embed_signup {
+  background: transparent;
+  clear: left;
+  font-family: sans-serif;
+  width: 100%;
+} */
+#mc_embed_signup_scroll {
+  display: flex;
 }
