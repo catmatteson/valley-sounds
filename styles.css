@@ -249,7 +249,7 @@ button:hover,
   }
   .container {
     margin-top: 0;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 80px);
     overflow: auto;
   }
   .row1 {
@@ -277,6 +277,21 @@ button:hover,
 }
 
 @media screen and (max-width: 512px) {
+  .container {
+    height: calc(100vh - 70px);
+  }
+  #mc_embed_signup_scroll {
+    flex-direction: column;
+  }
+  input.button {
+    margin: 1.5rem auto;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .container {
+    height: calc(100vh - 50px);
+  }
   #mc_embed_signup_scroll {
     flex-direction: column;
   }
