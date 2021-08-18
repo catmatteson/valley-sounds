@@ -270,10 +270,10 @@ button:hover,
 }
 
 @media screen and (max-width: 512px) {
-  #mc-embedded-subscribe-form {
+  #mc_embed_signup_scroll {
     flex-direction: column;
   }
-  input .email {
-    width: 100%;
+  input.button {
+    margin: 1.5rem auto;
   }
 }
