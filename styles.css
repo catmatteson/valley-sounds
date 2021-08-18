@@ -129,6 +129,7 @@ h3,
   max-height: 150px;
   display: block;
   margin: 3rem auto;
+  border-bottom: 2px inset transparent;
 }
 
 .tixImg > img {
@@ -167,7 +168,7 @@ button:hover,
 }
 
 .stallButton:hover + .stallImg {
-  border-bottom: 2px inset #af6727;
+  border-color: #af6727;
 }
 
 .stallButton:hover + .stallImg > img {
