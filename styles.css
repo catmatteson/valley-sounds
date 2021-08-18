@@ -239,11 +239,18 @@ button:hover,
   }
 }
 @media screen and (max-width: 767px) {
+  .background-image {
+    position: absolute;
+    background-image: url("./assets/images/Sun-Mountains.svg");
+  }
   .gradient {
+    background-attachment: fixed;
     background: linear-gradient(180deg, #28160d 60%, #4c2b16 80%, #000000 100%);
   }
   .container {
     margin-top: 0;
+    height: calc(100vh - 50px);
+    overflow: auto;
   }
   .row1 {
     flex-direction: column;
