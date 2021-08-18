@@ -268,3 +268,12 @@ button:hover,
     width: 80%;
   }
 }
+
+@media screen and (max-width: 512px) {
+  #mc-embedded-subscribe-form {
+    flex-direction: column;
+  }
+  input .email {
+    width: 100%;
+  }
+}
