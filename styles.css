@@ -196,10 +196,6 @@ button:hover,
 }
 
 @media screen and (min-width: 1600px) {
-  .tixImg,
-  .stallImg {
-    max-width: 175px;
-  }
 }
 
 @media screen and (max-width: 1240px) {
