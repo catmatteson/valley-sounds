@@ -236,7 +236,7 @@ button:hover,
   }
   #mc_embed_signup_scroll {
     width: 60%;
-    margin: 4.5rem auto 3rem auto;
+    margin: 4.5rem auto 0 auto;
   }
 }
 @media screen and (max-width: 767px) {
