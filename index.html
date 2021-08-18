@@ -8,96 +8,67 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Source+Sans+Pro:wght@400&display=swap"
       rel="stylesheet"
-    />
-    <link
-      href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css"
-      rel="stylesheet"
-      type="text/css"
     />
 
     <title>Valley Sounds</title>
   </head>
   <body>
+    <div class="gradient"></div>
+    <div class="background-image"></div>
+    <div class="debris"></div>
     <div class="container">
       <div class="row1">
-        <div class="item1">
+        <div class="item" id="item1">
+          <div class="tixButton">
+            <a
+              class="button"
+              role="button"
+              target="_blank"
+              href="https://tickets.oztix.com.au/outlet/event/392537d6-d744-468b-bd51-b7b5d1990b37"
+            >
+              Buy Tickets
+            </a>
+          </div>
+          <div class="tixImg" id="tixImg">
+            <img src="assets/images/tickets.svg" alt="Buy Tickets" />
+          </div>
           <h3>Tickets Now Available</h3>
-          <img id="tixImg" src="assets/images/tickets.svg" alt="Tickets" />
-          <button
-            onclick="window.location.href='https://tickets.oztix.com.au/outlet/event/392537d6-d744-468b-bd51-b7b5d1990b37';"
-          >
-            BUY TICKETS
-          </button>
         </div>
 
-        <div class="item2">
+        <div id="item2">
           <video class="video1" autoplay muted playsinline width="320">
             <source src="assets/videos/introMp4.mp4" type="video/mp4" />
           </video>
           <video class="video2" autoplay loop muted playsinline width="320">
             <source src="assets/videos/loopVideo.mp4" type="video/mp4" />
           </video>
-          <div class="item4">
-            <div id="mc_embed_signup">
-              <form
-                action="https://playworkstudios.us6.list-manage.com/subscribe/post?u=1ff4bea8b7b34acb1aae31697&amp;id=9cc126cbe6"
-                method="post"
-                id="mc-embedded-subscribe-form"
-                name="mc-embedded-subscribe-form"
-                class="validate"
-                target="_blank"
-                novalidate
-              >
-                <div id="mc_embed_signup_scroll">
-                  <!-- <label for="mce-EMAIL">Subscribe</label> -->
-                  <input
-                    type="email"
-                    value=""
-                    name="EMAIL"
-                    class="emailInput"
-                    id="mce-EMAIL"
-                    placeholder="EMAIL ADDRESS"
-                    required
-                  />
-                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                  <div
-                    style="position: absolute; left: -5000px"
-                    aria-hidden="true"
-                  >
-                    <input
-                      type="text"
-                      name="b_1ff4bea8b7b34acb1aae31697_9cc126cbe6"
-                      tabindex="-1"
-                      value=""
-                    />
-                  </div>
-                  <div class="clear">
-                    <input
-                      type="submit"
-                      value="SUBSCRIBE"
-                      name="subscribe"
-                      id="subscribe-button"
-                    />
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
         </div>
 
-        <div class="item3">
+        <div class="item" id="item3">
+          <div class="stallButton">
+            <a class="button" role="button" target="_blank" href="#">
+              Contact Us
+            </a>
+          </div>
+          <div class="stallImg">
+            <img
+              src="assets/images/foodTruck.svg"
+              alt="Stall Holders and Food Trucks"
+            />
+          </div>
+
           <h3>Food Truck and Stall Holders</h3>
-          <img id="tixImg" src="assets/images/foodTruck.svg" alt="Tickets" />
-          <form action="http://eepurl.com/hCdD5D">
-            <button type="submit">CONTACT US</button>
-          </form>
         </div>
       </div>
-      <div class="row2"></div>
+      <div class="row2">
+        <div class="item4"></div>
+        <!--item4-->
+      </div>
+      <!--row2-->
     </div>
-
+    <!--container-->
     <script src="app.js"></script>
   </body>
 </html>
