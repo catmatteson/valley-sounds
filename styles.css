@@ -108,6 +108,7 @@ h3,
 
 #item2 {
   flex: 1 1 auto;
+  margin-top: 3rem;
 }
 
 .row1 {
@@ -115,13 +116,11 @@ h3,
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  max-height: 75vh;
 }
 
 .row2 {
   display: inline-block;
   text-align: center;
-  max-height: 25vh;
 }
 
 .tixImg,
@@ -203,9 +202,6 @@ button:hover,
   width: 100%;
 }
 
-@media screen and (min-width: 1600px) {
-}
-
 @media screen and (max-width: 1240px) {
   .container {
     justify-content: flex-start;
@@ -223,6 +219,7 @@ button:hover,
   #item2 {
     order: -1;
     width: 100%;
+    margin-top: 0;
   }
   .item {
     width: 50%;
