@@ -197,9 +197,11 @@ button:hover,
 .video2 {
   display: none;
   width: 100%;
+  max-width: 600px;
 }
 .video1 {
   width: 100%;
+  max-width: 600px;
 }
 
 @media screen and (max-width: 1240px) {
