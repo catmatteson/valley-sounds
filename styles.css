@@ -22,6 +22,36 @@
   }
 }
 
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5) rotate(-2deg);
+  }
+  60% {
+    transform: scale(1.5) rotate(2deg);
+  }
+  70% {
+    transform: scale(1.5) rotate(-2deg);
+  }
+  80% {
+    transform: scale(1.5) rotate(2deg);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes shoot {
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -42,13 +72,49 @@ html {
 body {
   background-color: #28160d;
   font-size: 1.6rem;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   color: #ce812c;
+}
+
+.banner {
+  transform: rotate(-1deg);
+  background-image: url('./assets/images/debris.png');
+  background-size: cover;
+  background-position: center center;
+  background-color: #af6727;
+  width: 100%;
+  padding: 1rem;
+  position: fixed;
+  top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.banner-text {
+  color: #fff;
+  font-family: 'Great Vibes', cursive;
+  font-size: 6rem;
+}
+
+.banner-text--decorations {
+  max-height: 6rem;
+  display: inline-block;
+}
+
+.banner-text--decorations img {
+  animation: grow 2000ms infinite;
+
+  height: 100%;
+  width: auto;
+}
+
+.tighten {
+  letter-spacing: -3px;
 }
 
 h3,
 .h3 {
-  font-family: "Great Vibes", cursive;
+  font-family: 'Great Vibes', cursive;
   font-size: 4rem;
 }
 
@@ -72,7 +138,7 @@ h3,
   z-index: 9;
   width: 100vw;
   height: 100vh;
-  background-image: url("./assets/images/bg.svg");
+  background-image: url('./assets/images/bg.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -84,7 +150,7 @@ h3,
   z-index: 99;
   width: 100vw;
   height: 100vh;
-  background-image: url("./assets/images/debris.png");
+  background-image: url('./assets/images/debris.png');
   background-repeat: repeat;
   background-position: bottom center;
 }
@@ -242,7 +308,7 @@ button:hover,
 @media screen and (max-width: 767px) {
   .background-image {
     position: absolute;
-    background-image: url("./assets/images/Sun-Mountains.svg");
+    background-image: url('./assets/images/Sun-Mountains.svg');
   }
   .gradient {
     background-attachment: fixed;
